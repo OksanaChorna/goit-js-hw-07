@@ -1,7 +1,21 @@
+/* task-7_3 */
 .gallery-item {
   width: 300px;
 }
 
 .list {
   list-style: none;
+}
+
+/* task-7_6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }

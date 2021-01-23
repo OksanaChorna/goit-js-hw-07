@@ -36,10 +36,12 @@ const images = [
 
 const createGalleryItem = ({ url, alt }) =>
   `<li class="list"><img class="gallery-item" src='${url}' alt='${alt}' /></li>`;
-const galleryItem = images.reduce(
+
+const galleryItems = images.reduce(
   (acc, item) => acc + createGalleryItem(item),
   ""
 );
 
-const galleryList = document.querySelector("#gallery");
-galleryList.insertAdjacentHTML("afterbegin", galleryItem);
+const galleryList = document
+  .querySelector("#gallery")
+  .insertAdjacentHTML("afterbegin", galleryItems);
