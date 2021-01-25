@@ -12,7 +12,6 @@ function createBoxes(amount) {
     divRef.style.backgroundColor = getRandomColor();
     divRef.style.width = 30 + i * 10 + "px";
     divRef.style.height = 30 + i * 10 + "px";
-    console.log(divRef);
     boxesRef.appendChild(divRef);
   }
   inputRef.value = "";
