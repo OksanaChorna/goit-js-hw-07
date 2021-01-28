@@ -28,12 +28,3 @@ q
     });
 
     document.querySelector("#gallery").insertAdjacentHTML("afterbegin", imagesList);
-
-### 7_2
-
-    ingredients.forEach((ingredient) => {
-    const ingredientsRef = document.querySelector("#ingredients");
-    const itemRef = document.createElement("li");
-    itemRef.textContent = ingredient;
-    ingredientsRef.appendChild(itemRef);
-    });
